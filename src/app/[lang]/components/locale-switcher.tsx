@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { i18n, Locale } from "../../../../i18n.config";
-import { motion } from "framer-motion";
 
 export default function LocaleSwitcher({ lang }: { lang: Locale }) {
   const pathName = usePathname();
@@ -17,14 +16,7 @@ export default function LocaleSwitcher({ lang }: { lang: Locale }) {
   };
 
   return (
-    <motion.div
-      className="flex items-center bg-[#D4AF37] hover:bg-[#B8941F] transition-colors duration-300 rounded-full px-4 py-2 cursor-pointer shadow-lg"
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 0.6, duration: 0.3 }}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-    >
+    <div className="flex items-center bg-[#D4AF37] hover:bg-[#B8941F] transition-colors duration-300 rounded-full px-4 py-2 cursor-pointer shadow-lg">
       {i18n.locales.map((locale) => {
         return (
           lang !== locale && (
@@ -70,6 +62,6 @@ export default function LocaleSwitcher({ lang }: { lang: Locale }) {
           )
         );
       })}
-    </motion.div>
+    </div>
   );
 }

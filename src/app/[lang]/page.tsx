@@ -26,7 +26,7 @@ export default function Home() {
           variants={fadeIn("up", 0.2)}
         >
           <Image
-            src="/images/Full Header Screen 2.PNG"
+            src="/images/Full Header Screen 2.png"
             alt="Pool Championship"
             width={1920}
             height={1080}
@@ -48,7 +48,7 @@ export default function Home() {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <Image
-              src="/images/Balls Pattern.PNG"
+              src="/images/Balls Pattern.png"
               alt="Decoration"
               width={150}
               height={150}
@@ -106,7 +106,7 @@ export default function Home() {
           transition={{ delay: 0.7, duration: 0.8 }}
         >
           <Image
-            src="/images/Balls Pattern 2.PNG"
+            src="/images/Balls Pattern 2.png"
             alt="Decoration"
             width={150}
             height={150}
@@ -125,7 +125,7 @@ export default function Home() {
           variants={fadeIn("left", 0.3)}
         >
           <Image
-            src="/images/Saudi Flag.PNG"
+            src="/images/Saudi Flag.png"
             alt="Saudi Flag"
             width={800}
             height={800}
@@ -139,7 +139,7 @@ export default function Home() {
           variants={slideIn("right", "tween", 0.4, 0.8)}
         >
           <Image
-            src="/images/Mask Group 10.PNG"
+            src="/images/Mask Group 10.png"
             alt="Pool Player"
             width={800}
             height={800}
@@ -197,7 +197,7 @@ export default function Home() {
             animate="animate"
           >
             <Image
-              src="/images/Balls Pattern 2.PNG"
+              src="/images/Balls Pattern 2.png"
               alt=""
               width={150}
               height={150}
@@ -237,7 +237,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player Photo.PNG"
+                      src="/images/Player Photo.png"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -263,7 +263,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player 2 Photo.PNG"
+                      src="/images/Player 2 Photo.png"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -293,7 +293,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player Photo.PNG"
+                      src="/images/Player Photo.png"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -319,7 +319,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player 2 Photo.PNG"
+                      src="/images/Player 2 Photo.png"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -361,7 +361,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player Photo.PNG"
+                      src="/images/Player Photo.png"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -387,7 +387,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player 2 Photo.PNG"
+                      src="/images/Player 2 Photo.png"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -417,7 +417,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player Photo.PNG"
+                      src="/images/Player Photo.png"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -443,7 +443,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/images/Player 2 Photo.PNG"
+                      src="/images/Player 2 Photo.png"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -470,7 +470,7 @@ export default function Home() {
         {/* Background WPC2024 image */}
         <div className="absolute inset-0 bottom-0 z-0 opacity-20">
           <Image
-            src="/images/WPC2024-1080x1080.PNG"
+            src="/images/WPC2024-1080x1080.png"
             alt="WPC 2024 Background"
             fill
             className="object-cover"
@@ -523,7 +523,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Top Player Full.PNG"
+                src="/images/Top Player Full.png"
                 alt="Top Player"
                 width={300}
                 height={300}
@@ -539,7 +539,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Top Playe Full.PNG"
+                src="/images/Top Playe Full.png"
                 alt="Top Player"
                 width={400}
                 height={400}
@@ -555,7 +555,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Top Playe Full-1.PNG"
+                src="/images/Top Playe Full-1.png"
                 alt="Top Player"
                 width={400}
                 height={400}
@@ -576,7 +576,7 @@ export default function Home() {
         {/* Background Sparks image */}
         <div className="absolute inset-0 bottom-0 z-0 opacity-20">
           <Image
-            src="/images/Sparks.PNG"
+            src="/images/Sparks.png"
             alt="Sparks Background"
             fill
             className="object-cover"
@@ -619,7 +619,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="relative">
                   <Image
-                    src="/images/Mask group-1.PNG"
+                    src="/images/Mask group-1.png"
                     alt="News"
                     width={800}
                     height={400}
@@ -661,7 +661,7 @@ export default function Home() {
               >
                 <div className="w-1/2 relative">
                   <Image
-                    src="/images/Mask group-2.PNG"
+                    src="/images/Mask group-2.png"
                     alt="Video"
                     width={200}
                     height={200}
@@ -701,7 +701,7 @@ export default function Home() {
               >
                 <div className="w-1/2 relative">
                   <Image
-                    src="/images/Mask group-2.PNG"
+                    src="/images/Mask group-2.png"
                     alt="Video"
                     width={200}
                     height={200}
@@ -797,7 +797,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  src="/images/Mask Group 8.PNG"
+                  src="/images/Mask Group 8.png"
                   alt="Circle Background"
                   width={500}
                   height={500}
@@ -815,7 +815,7 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <Image
-                  src="/images/58878.PNG"
+                  src="/images/58878.png"
                   alt="Pool Table"
                   width={400}
                   height={300}
@@ -855,7 +855,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Mask group-5.PNG"
+                src="/images/Mask group-5.png"
                 alt="Restaurant"
                 width={600}
                 height={400}
@@ -871,7 +871,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Mask group-7.PNG"
+                src="/images/Mask group-7.png"
                 alt="Stadium"
                 width={600}
                 height={400}
@@ -887,7 +887,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Mask group-4.PNG"
+                src="/images/Mask group-4.png"
                 alt="Event"
                 width={900}
                 height={600}
@@ -903,7 +903,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/images/Mask group-6.PNG"
+                src="/images/Mask group-6.png"
                 alt="Pool Championship"
                 width={600}
                 height={300}
@@ -924,7 +924,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/images/Mask group-4.PNG"
+                  src="/images/Mask group-4.png"
                   alt="Event"
                   width={900}
                   height={600}
@@ -938,7 +938,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/images/Mask group-5.PNG"
+                  src="/images/Mask group-5.png"
                   alt="Restaurant"
                   width={600}
                   height={400}
@@ -952,7 +952,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/images/Mask group-6.PNG"
+                  src="/images/Mask group-6.png"
                   alt="Pool Championship"
                   width={600}
                   height={300}
@@ -966,7 +966,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/images/Mask group-7.PNG"
+                  src="/images/Mask group-7.png"
                   alt="Stadium"
                   width={600}
                   height={400}
@@ -1013,7 +1013,7 @@ export default function Home() {
             transition={{ type: "spring", stiffness: 100 }}
           >
             <Image
-              src="/images/Organizers.PNG"
+              src="/images/Organizers.png"
               alt="Organizers"
               width={1000}
               height={100}
@@ -1038,7 +1038,7 @@ export default function Home() {
           transition={{ type: "spring", stiffness: 100 }}
         >
           <Image
-            src="/images/Jeddah Skyline.PNG"
+            src="/images/Jeddah Skyline.png"
             alt="Jeddah Skyline"
             width={1000}
             height={100}

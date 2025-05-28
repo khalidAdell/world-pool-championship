@@ -23,18 +23,21 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   params,
   children,
-}: Readonly<{
-  params: { lang: Locale };
+}: {
+  params: Promise<{ lang: Locale }>;
   children: React.ReactNode;
-}>) {
-  const { page } = await getDictionary(params.lang);
+}) {
+  const { lang } = await params;
+  const { page } = await getDictionary(lang);
 
   return (
-    <html lang={params.lang} dir={params.lang === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${params.lang === 'ar' ? 'font-arabic' : ''}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${
+          lang === "ar" ? "font-arabic" : ""
+        }`}
       >
-      <Navbar lang={params.lang} table={page}/>
+        <Navbar lang={lang} table={page} />
         {children}
       </body>
     </html>

@@ -1,0 +1,24 @@
+{
+  "page": {
+    "home": {
+      "home": "Home"
+    },
+    "navigation": {
+      "about": "About",
+      "lifeInJeddah": "Life In Jeddah",
+      "mediaCenter": "Media Center",
+      "matches": "Matches",
+      "contactUs": "Contact Us"
+    },
+    "language": {
+      "switchTo": "Switch to",
+      "english": "English",
+      "arabic": "Arabic"
+    },
+    "common": {
+      "readMore": "Read More",
+      "viewAll": "View All",
+      "learnMore": "Learn More"
+    }
+  }
+}

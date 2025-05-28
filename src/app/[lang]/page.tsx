@@ -1,8 +1,6 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import {
   fadeIn,
@@ -10,27 +8,25 @@ import {
   textVariant,
   slideIn,
   rotateAnimation,
-} from "./animations";
+} from "./components/animations";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-[#0A2A1A] relative overflow-hidden">
-      <Navbar />
-
       {/* Hero Section */}
       <motion.section
         className="relative z-10 h-[100vh] max-h-[800px] min-h-[600px]"
-        initial="hidden"
+        // initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
         {/* Hero Background Image */}
         <motion.div
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 rtl:rotate-180 rtl:scale-y-[-1]"
           variants={fadeIn("up", 0.2)}
         >
           <Image
-            src="/Website/Full Header Screen 2.png"
+            src="/images/Full Header Screen 2.PNG"
             alt="Pool Championship"
             width={1920}
             height={1080}
@@ -46,17 +42,17 @@ export default function Home() {
 
           {/* Triangular decoration */}
           <motion.div
-            className="absolute bottom-0 left-0 z-10"
+            className="absolute bottom-0 right-0 z-10"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <Image
-              src="/Website/Balls Pattern.png"
+              src="/images/Balls Pattern.PNG"
               alt="Decoration"
               width={150}
               height={150}
-              className="w-auto h-auto"
+              className=""
             />
           </motion.div>
         </motion.div>
@@ -110,11 +106,11 @@ export default function Home() {
           transition={{ delay: 0.7, duration: 0.8 }}
         >
           <Image
-            src="/Website/Balls Pattern 2.png"
+            src="/images/Balls Pattern 2.PNG"
             alt="Decoration"
             width={150}
             height={150}
-            className="w-auto h-auto"
+            className=""
           />
         </motion.div>
         {/* Primary color overlay for background */}
@@ -125,29 +121,29 @@ export default function Home() {
 
         {/* Saudi flag in background with primary color overlay */}
         <motion.div
-          className="absolute bottom-0 left-0 w-[80%] h-[80%] opacity-30"
+          className="absolute bottom-0 left-0 rtl:left-auto rtl:right-0 w-[80%] h-[80%] opacity-30"
           variants={fadeIn("left", 0.3)}
         >
           <Image
-            src="/Website/Saudi Flag.png"
-            alt=""
+            src="/images/Saudi Flag.PNG"
+            alt="Saudi Flag"
             width={800}
             height={800}
-            className="object-contain after:bg-[#0A2A1A]"
+            className="object-contain rtl:transform rtl:scale-x-[-1]"
           />
         </motion.div>
 
         {/* Player image */}
         <motion.div
-          className="absolute top-0 bottom-0 right-0 -translate-y-28 w-[50%]"
+          className="absolute top-0 bottom-0 right-0 rtl:right-auto rtl:left-0 -translate-y-28 w-[50%]"
           variants={slideIn("right", "tween", 0.4, 0.8)}
         >
           <Image
-            src="/Website/Mask Group 10.png"
+            src="/images/Mask Group 10.PNG"
             alt="Pool Player"
             width={800}
             height={800}
-            className="object-contain"
+            className="object-contain rtl:transform rtl:scale-x-[-1]"
             priority
           />
         </motion.div>
@@ -193,34 +189,19 @@ export default function Home() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {/* Triangular decoration */}
-        <motion.div
-          className="absolute bottom-0 right-0 z-10 opacity-60"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 0.6, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
-        >
-          <Image
-            src="/Website/Balls Pattern.png"
-            alt="Decoration"
-            width={150}
-            height={150}
-            className="w-auto h-auto transform rotate-180"
-          />
-        </motion.div>
         {/* Background decorative elements */}
         <motion.div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <motion.div
-            className="absolute bottom-[20%] left-0 w-[150px] h-[150px] opacity-10"
+            className="absolute bottom-[20%] left-0 rtl:left-auto rtl:right-0 w-[150px] h-[150px] opacity-10"
             variants={rotateAnimation}
             animate="animate"
           >
             <Image
-              src="/Website/Balls Pattern 2.png"
+              src="/images/Balls Pattern 2.PNG"
               alt=""
               width={150}
               height={150}
-              className="object-contain"
+              className="object-contain rtl:transform rtl:scale-x-[-1]"
             />
           </motion.div>
         </motion.div>
@@ -256,7 +237,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player Photo.png"
+                      src="/images/Player Photo.PNG"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -282,7 +263,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player 2 Photo.png"
+                      src="/images/Player 2 Photo.PNG"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -312,7 +293,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player Photo.png"
+                      src="/images/Player Photo.PNG"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -338,7 +319,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player 2 Photo.png"
+                      src="/images/Player 2 Photo.PNG"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -380,7 +361,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player Photo.png"
+                      src="/images/Player Photo.PNG"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -406,7 +387,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player 2 Photo.png"
+                      src="/images/Player 2 Photo.PNG"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -436,7 +417,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player Photo.png"
+                      src="/images/Player Photo.PNG"
                       alt="Player 1"
                       width={80}
                       height={80}
@@ -462,7 +443,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-[80px] h-[80px] bg-[#0A2A1A] rounded-full mb-3 overflow-hidden">
                     <Image
-                      src="/Website/Player 2 Photo.png"
+                      src="/images/Player 2 Photo.PNG"
                       alt="Player 2"
                       width={80}
                       height={80}
@@ -489,7 +470,7 @@ export default function Home() {
         {/* Background WPC2024 image */}
         <div className="absolute inset-0 bottom-0 z-0 opacity-20">
           <Image
-            src="/Website/WPC2024-1080x1080.png"
+            src="/images/WPC2024-1080x1080.PNG"
             alt="WPC 2024 Background"
             fill
             className="object-cover"
@@ -542,7 +523,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Top Player Full.png"
+                src="/images/Top Player Full.PNG"
                 alt="Top Player"
                 width={300}
                 height={300}
@@ -558,7 +539,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Top Playe Full.png"
+                src="/images/Top Playe Full.PNG"
                 alt="Top Player"
                 width={400}
                 height={400}
@@ -574,7 +555,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Top Playe Full-1.png"
+                src="/images/Top Playe Full-1.PNG"
                 alt="Top Player"
                 width={400}
                 height={400}
@@ -595,7 +576,7 @@ export default function Home() {
         {/* Background Sparks image */}
         <div className="absolute inset-0 bottom-0 z-0 opacity-20">
           <Image
-            src="/Website/Sparks.png"
+            src="/images/Sparks.PNG"
             alt="Sparks Background"
             fill
             className="object-cover"
@@ -638,7 +619,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="relative">
                   <Image
-                    src="/Website/Mask group-1.png"
+                    src="/images/Mask group-1.PNG"
                     alt="News"
                     width={800}
                     height={400}
@@ -680,7 +661,7 @@ export default function Home() {
               >
                 <div className="w-1/2 relative">
                   <Image
-                    src="/Website/Mask group-2.png"
+                    src="/images/Mask group-2.PNG"
                     alt="Video"
                     width={200}
                     height={200}
@@ -720,7 +701,7 @@ export default function Home() {
               >
                 <div className="w-1/2 relative">
                   <Image
-                    src="/Website/Mask group-2.png"
+                    src="/images/Mask group-2.PNG"
                     alt="Video"
                     width={200}
                     height={200}
@@ -755,7 +736,6 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-
       {/* About Section */}
       <motion.section
         className="py-20 relative"
@@ -785,51 +765,49 @@ export default function Home() {
                 className="text-white text-sm md:text-base mb-6 md:mb-8 leading-relaxed"
                 variants={fadeIn("up", 0.8)}
               >
-                Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat
-                volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis
-                nisl ut aliquip ex ea commodo consequat. nisl ut
-                aliquip ex ea commodo consequat. nisl ut aliquip
-                ex ea commodo consequat. nisl ut aliquip ex ea
-                commodo consequat.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. nisl ut aliquip ex ea commodo
+                consequat. nisl ut aliquip ex ea commodo consequat. nisl ut
+                aliquip ex ea commodo consequat.
               </motion.p>
-              <motion.div
-                variants={fadeIn("up", 1)}
-              >
-                <Link href="/about" className="inline-block bg-[#BF9447] text-white px-6 py-2 md:px-8 md:py-3 text-sm md:text-base font-medium hover:bg-[#A37E3B] transition-colors duration-300">
+              <motion.div variants={fadeIn("up", 1)}>
+                <Link
+                  href="/about"
+                  className="inline-block bg-[#BF9447] text-white px-6 py-2 md:px-8 md:py-3 text-sm md:text-base font-medium hover:bg-[#A37E3B] transition-colors duration-300"
+                >
                   Read More
                 </Link>
               </motion.div>
             </motion.div>
-            
+
             <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full">
               {/* Circle background */}
               <motion.div
-                className="absolute right-0 md:-right-4 top-4 z-0 w-[80%] md:w-auto hidden md:block"
+                className="absolute ltr:right-0 rtl:left-0 top-4 z-0 w-[80%] md:w-auto hidden md:block"
                 variants={fadeIn("left", 0.3)}
                 animate={{
                   rotate: [0, 3, 0, -3, 0],
                   transition: {
-                    duration: 15,
-                    repeat: Infinity,
+                    duration: 0.2,
                     ease: "linear",
                   },
                 }}
               >
                 <Image
-                  src="/Website/Mask Group 8.png"
+                  src="/images/Mask Group 8.PNG"
                   alt="Circle Background"
                   width={500}
                   height={500}
-                  className="object-contain"
+                  className="object"
                 />
               </motion.div>
 
               {/* Billiard table image */}
               <motion.div
-                className="absolute right-0 md:right-0 top-0 z-10 w-full md:w-auto flex justify-center md:block"
+                className="absolute ltr:right-0 rtl:left-0 top-0 z-10 w-full md:w-auto flex justify-center md:block rtl:transform rtl:scale-x-[-1]"
                 variants={fadeIn("left", 0.5)}
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -837,11 +815,11 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <Image
-                  src="/Website/58878.png"
+                  src="/images/58878.PNG"
                   alt="Pool Table"
                   width={400}
                   height={300}
-                  className="w-[90%] md:w-full h-auto"
+                  className=""
                 />
               </motion.div>
             </div>
@@ -856,21 +834,6 @@ export default function Home() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {/* Triangular decoration */}
-        <motion.div
-          className="absolute bottom-0 left-0 z-10 opacity-60"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 0.6, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
-        >
-          <Image
-            src="/Website/Balls Pattern.png"
-            alt="Decoration"
-            width={150}
-            height={150}
-            className="w-auto h-auto"
-          />
-        </motion.div>
         <motion.div
           className="container mx-auto px-4"
           variants={staggerContainer()}
@@ -886,13 +849,13 @@ export default function Home() {
           <div className="relative hidden md:block">
             {/* Restaurant image (top right) */}
             <motion.div
-              className="absolute top-0 right-[15rem] w-[40%] z-20"
+              className="absolute top-0 right-[18rem] w-[38%] z-20"
               variants={fadeIn("left", 0.2)}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Mask group-5.png"
+                src="/images/Mask group-5.PNG"
                 alt="Restaurant"
                 width={600}
                 height={400}
@@ -908,7 +871,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Mask group-7.png"
+                src="/images/Mask group-7.PNG"
                 alt="Stadium"
                 width={600}
                 height={400}
@@ -918,13 +881,13 @@ export default function Home() {
 
             {/* Event image (large triangle - left) */}
             <motion.div
-              className="absolute top-[50px] left-[10rem] w-[60%] z-10"
+              className="absolute top-[50px] left-[14rem] w-[60%] z-10"
               variants={fadeIn("right", 0.4)}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Mask group-4.png"
+                src="/images/Mask group-4.PNG"
                 alt="Event"
                 width={900}
                 height={600}
@@ -934,13 +897,13 @@ export default function Home() {
 
             {/* Championship image (bottom) */}
             <motion.div
-              className="absolute top-[400px] right-[17rem] w-[30%] z-30"
+              className="absolute bottom-[-13rem] right-[20rem] w-[28%] z-30"
               variants={fadeIn("up", 0.5)}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Image
-                src="/Website/Mask group-6.png"
+                src="/images/Mask group-6.PNG"
                 alt="Pool Championship"
                 width={600}
                 height={300}
@@ -961,49 +924,49 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/Website/Mask group-4.png"
+                  src="/images/Mask group-4.PNG"
                   alt="Event"
                   width={900}
                   height={600}
                   className="w-full h-auto rounded-lg"
                 />
               </motion.div>
-              
+
               <motion.div
                 variants={fadeIn("up", 0.3)}
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/Website/Mask group-5.png"
+                  src="/images/Mask group-5.PNG"
                   alt="Restaurant"
                   width={600}
                   height={400}
                   className="w-full h-auto rounded-lg"
                 />
               </motion.div>
-              
+
               <motion.div
                 variants={fadeIn("up", 0.4)}
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/Website/Mask group-6.png"
+                  src="/images/Mask group-6.PNG"
                   alt="Pool Championship"
                   width={600}
                   height={300}
                   className="w-full h-auto rounded-lg"
                 />
               </motion.div>
-              
+
               <motion.div
                 variants={fadeIn("up", 0.5)}
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <Image
-                  src="/Website/Mask group-7.png"
+                  src="/images/Mask group-7.PNG"
                   alt="Stadium"
                   width={600}
                   height={400}
@@ -1022,21 +985,6 @@ export default function Home() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {/* Triangular decoration */}
-        <motion.div
-          className="absolute top-0 right-0 z-10 opacity-60"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 0.6, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
-        >
-          <Image
-            src="/Website/Balls Pattern.png"
-            alt="Decoration"
-            width={150}
-            height={150}
-            className="w-auto h-auto transform rotate-90"
-          />
-        </motion.div>
         <motion.div
           className="container mx-auto px-4"
           variants={staggerContainer()}
@@ -1062,11 +1010,10 @@ export default function Home() {
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 items-center"
             variants={fadeIn("up", 0.3)}
-            whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 100 }}
           >
             <Image
-              src="/Website/Organizers.png"
+              src="/images/Organizers.PNG"
               alt="Organizers"
               width={1000}
               height={100}
@@ -1084,6 +1031,21 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
+        <motion.div
+          className="mb-6"
+          variants={fadeIn("up", 0.3)}
+          whileHover={{ scale: 1.02 }}
+          transition={{ type: "spring", stiffness: 100 }}
+        >
+          <Image
+            src="/images/Jeddah Skyline.PNG"
+            alt="Jeddah Skyline"
+            width={1000}
+            height={100}
+            className="col-span-full w-full h-auto"
+            unoptimized
+          />
+        </motion.div>
         <motion.div
           className="container mx-auto px-4 text-center"
           initial={{ y: 20, opacity: 0 }}

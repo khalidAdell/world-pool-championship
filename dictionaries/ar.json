@@ -1,0 +1,24 @@
+{
+  "page": {
+    "home": {
+      "home": "الرئيسية"
+    },
+    "navigation": {
+      "about": "عن البطولة",
+      "lifeInJeddah": "الحياة في جدة",
+      "mediaCenter": "المركز الإعلامي",
+      "matches": "المباريات",
+      "contactUs": "اتصل بنا"
+    },
+    "language": {
+      "switchTo": "التبديل إلى",
+      "english": "الإنجليزية",
+      "arabic": "العربية"
+    },
+    "common": {
+      "readMore": "قراءة المزيد",
+      "viewAll": "عرض الكل",
+      "learnMore": "معرفة المزيد"
+    }
+  }
+}
